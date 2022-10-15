@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Listbox</title>
+</head>
+<body>
+    <header>
+        <h1>Form Pemesanan Mobil</h1>
+    </header>
+</body>
+</html>
+<form action="proses.php" method="post">
+<fieldset>
+      <legend>Data Pemesanan Mobil</legend>
+      <p>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama">
+    </p>
+    <p>
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" cols="35" rows="2"></textarea>
+    </p>
+    <p>
+        <label for="tele[on">No HP/Telepon</label>
+        <input type="text" id="telepon" name="telepon">
+    </p>
+      <p>
+      <label for="cars">Nama Mobil</label>
+           <select name="mobil">
+                <option value="" selected="selected" >--Pilih Mobil--</option>
+                <option value="avansa">Avansa</option>
+                <option value="xenia">Xenia</option>
+                <option value="sigra">Sigra</option>
+                <option value="xpander">Xpander</option>
+      </p>
+  </form>  
+  </select>
+    <form action="proses.php" method="post">
+      <p>
+      <label for="transmisi">Transmisi</label>
+           <select name="transmisi">
+                <option value="" selected="selected" >--Pilih Transmisi--</option>
+                <option value="manual">Manual</option>
+                <option value="otomatis">Otomatis/Matic</option>
+      </p>
+    </form>  
+    </select>
+    <form action="proses.php" method="post">
+      <p>
+      <label for="type">Tipe</label>
+           <select name="tipe">
+                <option value="",selected="selected" >--Pilih Tipe--</option>
+                <option value="sport">Sport</option>
+                <option value="standar">Standar</option>
+    </p>
+</fieldset>
+</form>
+</select>
+    <p><input type="submit" value="Kirim Data"></p>
+    <style>
+        form p > label {
+            display: inline-block;
+            width: 100px;
+        }
+        form input[type="text"], form textarea {
+            border: 1px solid #7a1919;
+        }
+        form input[type="submit"] {
+            border: 1px solid #7a1919;
+            background-color: #f8f80c;
+            color: #060606;
+            font-weight: bold;
+            padding: 5px 15px;
+        }
+    </style>
